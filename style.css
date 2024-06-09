@@ -1,0 +1,150 @@
+body {
+    background-color: hsl(185, 75%, 39%);
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixaCentro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+.Nome{
+    font-family: 'Kumbh Sans';
+    color: hsl(229, 23%, 23%);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.idade{
+    font-family: 'Kumbh Sans';
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+}
+
+.text1{
+    font-family: 'Kumbh Sans';
+    color: hsl(229, 23%, 23%);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text2{
+
+    margin-top: 5px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-family: 'Kumbh Sans';
+    color: hsl(227, 10%, 46%);
+    
+}
+
+
+.imagemTopo{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.space{
+    width: 2%;
+}
+
+.aling0{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Kumbh Sans';
+    color: hsl(227, 10%, 46%);
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+.subCaixa02{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 40px;
+
+}
+
+
+.foto {
+    
+    display: flex;
+    justify-content: center;
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%; 
+    border: 5px solid white; 
+    overflow: hidden;
+    margin-top: -85px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    position: relative; 
+    z-index: 3; 
+    
+}
+  
+
+.caixaBranca {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+    z-index: 3;
+    
+}
+
+.imagemTopo {
+    z-index: 4;
+    display: flex;
+}
+
+.imagemTop {
+    width: 1000px; /* Ajuste conforme necessário */
+    height: 1000px; /* Ajuste conforme necessário */
+    clip-path: polygon(5% 50%, 100% 50%, 100% 100%, 50% 100%);
+    position: absolute; /* Para permitir o uso de top, left, etc. */
+    margin-top: 100px;
+    margin-left: -40px;
+    transform: translate(-50%, -50%); /* Ajusta para a metade da largura e altura */
+    z-index: 1;
+}
+
+.imagemBot {
+    width: 1000px;
+    height: 1000px;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%, 0% 100%);
+    position: absolute;
+    margin-top: -10px;
+    transform: translate(50%, 50%);
+    z-index: 2;
+}
+
+
+.text1, .text2 {
+    text-align: center;
+}
